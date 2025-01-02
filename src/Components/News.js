@@ -43,7 +43,7 @@ const News = (props) => {
 
   useEffect(() => {
     return () => {
-      document.title = `NewsMato - ${capitalizefirstLetter(props.category)} ${props.name}`
+      document.title = `NewsMato - ${capitalizefirstLetter(props.category)}`
       updateNews()
     };
   }, []);
