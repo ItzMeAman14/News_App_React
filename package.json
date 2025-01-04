@@ -4,7 +4,7 @@
   "scripts": {
     "start": "node backend/index.js",
     "client": "npm start --prefix client",
-    "client-build": "rimraf client/build && npm run build --prefix client",
+    "client-build": "npx rimraf client/build && npm run build --prefix client",
     "client-deploy": "npm run client-build && npm start",
     "dev": "concurrently \"npm run client\" \"npm run start\""
   },
