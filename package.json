@@ -2,9 +2,9 @@
   "name": "newsapp",
   "private": true,
   "scripts": {
-    "start": "node backend/index.js",
+    "start": "nodemon backend/index.js",
     "client": "npm start --prefix client",
-    "client-build": "npx rimraf client/build && npm run build --prefix client",
+    "client-build": "npm run build --prefix client",
     "client-deploy": "npm run client-build && npm start",
     "dev": "concurrently \"npm run client\" \"npm run start\""
   },
@@ -14,8 +14,5 @@
   "dependencies": {
     "concurrently": "^6.0.0",
     "newsapp": "file:"
-  },
-  "devDependencies": {
-    "rimraf": "^6.0.1"
   }
 }
