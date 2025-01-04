@@ -1,11 +1,13 @@
 {
   "name": "newsapp",
-  "private":true,
+  "private": true,
   "scripts": {
-    "start": "node backend/index.js",     
+    "start": "node backend/index.js",
     "client": "npm start --prefix client",
-    "client-build": "npm run build --prefix client", 
+    "client-build": "npm run build --prefix client",
     "client-deploy": "npm run client-build && npm start"
   },
-  "dependencies": {}
+  "dependencies": {
+    "newsapp": "file:"
+  }
 }
